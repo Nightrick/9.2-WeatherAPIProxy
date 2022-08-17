@@ -1,0 +1,21 @@
+package co.grandcircus.weatherAPIproxy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WeatherController {
+	
+	@Autowired
+	WeatherService service; 
+	
+	@GetMapping("/forecast")
+	public List<Forecast> getForecast(String latitude, String longitude){
+		
+		String coordinates = latitude + ", " + longitude;
+		String gridpointUrl = "https://api.weather.gov/points/" + coordinates;
+		GridpointResponse 
+		
+	}
+
+}

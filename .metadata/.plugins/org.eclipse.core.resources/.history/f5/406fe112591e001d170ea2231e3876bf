@@ -1,0 +1,5 @@
+package co.grandcircus.weatherAPIproxy;
+
+public class Forecast {
+
+}
